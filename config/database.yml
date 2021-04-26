@@ -23,7 +23,7 @@ default: &default
 
 development:
   <<: *default
-  database: sisco_bank_development
+  database: sisco_bank
 
   # The specified database role being used to connect to postgres.
   # To create additional roles in postgres see `$ createuser --help`.
@@ -57,7 +57,7 @@ development:
 # Do not set this db to the same as development or production.
 test:
   <<: *default
-  database: sisco_bank_test
+  database: sisco_bank
 
 # As with config/credentials.yml, you never want to store sensitive information,
 # like your database password, in your source code. If your source code is
@@ -81,6 +81,7 @@ test:
 #
 production:
   <<: *default
-  database: sisco_bank_production
-  username: sisco_bank
-  password: <%= ENV['SISCO_BANK_DATABASE_PASSWORD'] %>
+  database: sisco_bank
+  username: betoreveron
+  password: root
+

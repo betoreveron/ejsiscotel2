@@ -1,0 +1,33 @@
+<h1>Listado de Usuarios</h1>
+
+<table>
+    <tr>
+        <thead>
+            <th>DOcumento</th>
+            <th>Fecha emision</th>
+            <th>Fecha vencimiento</th>
+            <th>Nombre</th>
+            <th>EMail</th>
+            <th>Celular 1</th>
+            <th>Celular 2</th>
+            <th>Tipo Usuario FK</th>
+        </thead>
+    </tr>
+
+    <% @users.each do |user| %>
+    <tr>
+        <td> <%= users.doc_id %> </td>
+        <td> <%= users.doc_issue_date %> </td>
+        <td> <%= users.doc_expiration_date %> </td>       
+        <td> <%= users.user_name %> </td>
+        <td> <%= users.email %> </td>
+        <td> <%= users.phone_number1 %> </td>
+        <td> <%= users.phone_number2 %> </td>  
+        <td> <%= users.fk_user_type_id %> </td>
+        <td> 
+            <%= link_to "Editar" %>
+            <%= link_to "Eliminar" %> 
+        </td>                                
+    </tr>
+    <% end %>
+</table>
