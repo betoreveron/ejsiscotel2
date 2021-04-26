@@ -1,0 +1,39 @@
+<%= form_for @users do |p| %></form>
+
+<div>
+    <%= p.label :doc_id %>
+    <%= p.text_field :doc_id %>
+</div>
+<div>
+    <%= p.label :doc_issue_date %>
+    <%= p.text_field :doc_issue_date %>
+</div>
+<div>
+    <%= p.label :doc_expiration_date %>
+    <%= p.text_field :doc_expiration_date %>
+</div>
+<div>
+    <%= p.label :user_name %>
+    <%= p.text_field :user_name %>
+</div>
+<div>
+    <%= p.label :email %>
+    <%= p.text_field :email %>
+</div>
+<div>
+    <%= p.label :phone_number1 %>
+    <%= p.text_field :phone_number1 %>
+</div>
+<div>
+    <%= p.label :phone_number2 %>
+    <%= p.text_field :phone_number2 %>
+</div>
+<div>
+    <%= p.label :fk_user_type_id %>
+    <%= p.text_field :fk_user_type_id %>
+</div>
+
+<div>
+    <%= p.submit %>
+</div>
+<% end %>
